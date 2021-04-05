@@ -1,155 +1,186 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+ html { /* Declaring font-size of root, so rem can inherit from root tag  */
+    font-size: 10px;/*SO 1REM is 10px*/
+
 }
 
 body {
     font-family: "Lato", sans-serif ;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem; /*30px*/  
 }
 
 .header {
-    height: 95vh;
+    height: 95vh; /*Shows almost 100 % of content*/
     background-image: linear-gradient(
         to right bottom,
-        rgba(8, 81, 120, 0.8),
-        rgba(133, 216, 206, 0.8)),
-    url(../img/guy.jpg);
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)),
+    url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); /*Very Important Property */
-}
+}       
+
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem; 
 }
 .logo {
-    height: 35px;
+    height: 3.5rem; /* width will be figured out by browser */
 }
+
 .text-box {
     position: absolute;
-    top: 40%;
+    top: 40%;/*if  50% looks more down so we made it 40%*/
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*In relation to the element itself*/
+    /*X(-50%):Will be shifted half of width to left*/ 
+    /*Y(-50%):Will be shifted half of height to top*/ 
+
     text-align: center;
 }
-.heading-primary {
+
+.heading-primary {  
     color: #fff;
     text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 60px;
-}   
 
-.heading-primary-main {
+    /* Sometimes animation shakes, so this property helps to fix this problem */
+    backface-visibility: hidden;
+    /* On animation this entire "heading-primary" element moves , so it is shaking little bit
+       "backface-visibility" property determines the backpart of element if is visible or hidden,
+       for example if  we transform an element by rotating it to 180 degrees, so we can see back part of this element
+       if we use "backface-visibility: hidden;", backpart of an elem gets hidden, but in this case it helps to delete shaking*/
+
+    margin-bottom: 6rem;
+}
+
+.heading-primary-main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
-    animation: moveInLeft 1s ease-out;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft; /*Name of the keyframe animation*/
+    animation-duration: 1s;  /*Duration Timer animation*/
+    animation-timing-function: ease-out;/*Type of animation, ease-out: starts slow and becomes faster*/
+    /*animation-iteration-count: 3; /*Animation repeats 3 Times*/
+    /* animation-delay: 3s; /*Waits 3 seconds and animates */ 
+
 }
 
 .heading-primary-sub {
-    display: block;
-    font-size: 20px;
+    display:block;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
-    animation: moveInRight 1s ease-out;
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-        
-    }
-
-    80% {
-        transform: translateX(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-
-    }
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; /*Shorthand for animation property*/
 }
 
 @keyframes moveInLeft {
-    0% {
+    0% { /*Starting Point of animation */
         opacity: 0;
-        transform: translateX(-100px);
-        
+        transform: translateX(-10rem);
     }
 
-    80% {
-        transform: translateX(10px);
+    80% { /*As it goes right and returns at the middle of animation we have to specify property here*/
+        transform: translateX(1rem);
+    }
+    100% { /*Ending Point of animation */
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes moveInRight {
+    0% { /*Starting Point of animation */
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% { /*As it goes right and returns at the middle of animation we have to specify property here*/
+        transform: translateX(-1rem);
+    }
+    100% { /*Ending Point of animation */
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom  {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
     }
 
     100% {
         opacity: 1;
         transform: translate(0);
-
     }
 }
 
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-.btn,
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2) ; /*: shadow in X direction, shadow in Y direction, color of box-shadow: ;*/
 }
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+.btn:active {   
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2) ; /*Decreasing shadow, when user presses a button, making it cooler*/
 }
 
 .btn-white {
     background-color: #fff;
     color: #777;
 }
-
+/* Using pseudo elements, allow us to style certain parts of elements, */
+/*"after" pseudoelement adds virtual element right after selected btn, so we can style this element */
 .btn::after {
+    /*Trick here: we add an elem, that looks exactly like button we already have, but we put It behind the button*/
     content: "";
     display: inline-block;
+    height: 100%; /*pseude elems are basically treated as child elems, so if we wrote height100% it takes parent as btn and gives 100% of btn*/
     width: 100%;
-    height: 100%;
     border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s;
+    transition: all .4s ;
 }
 
 .btn-white::after {
@@ -157,12 +188,11 @@ body {
 }
 
 .btn:hover:after {
-    transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6); /* Scales an after pseudo element */
     opacity: 0;
 }
 
 .btn-animated {
-    animation: moveInBottom .5s ease-out .75;
-    animation-fill-mode: backwards;
-    
+    animation: moveInBottom .5s ease-out .75; /*: animation-name: ;, animation-duration: ;, animation-timing-function: ;, animation-delay: ;*/
+    animation-fill-mode: backwards; /*Attaches o% animation keyframe to the btn*/
 }
