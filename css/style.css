@@ -10,12 +10,14 @@ Dark green: #28b485
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
  html { /* Declaring font-size of root, so rem can inherit from root tag  */
-    font-size: 10px;/*SO 1REM is 10px*/
-
+    /* font-size: 10px;SO 1REM is 10px */
+    font-size: 62.5%;/*It is not good pracitce, for ex: if user wanna change 
+    default font-size if it is given in px it CANNOT be CHANGED
+    so here we are giving in % of 62.5% === 10px, so 1rem = 10px, VERY EASY TO USE*/    
 }
 
 body {
@@ -25,15 +27,16 @@ body {
     line-height: 1.7;
     color: #777;
     padding: 3rem; /*30px*/  
+    box-sizing: border-box;
 }
 
 .header {
     height: 95vh; /*Shows almost 100 % of content*/
     background-image: linear-gradient(
         to right bottom,
-        rgba(126, 213, 111, 0.8),
-        rgba(40, 180, 133, 0.8)),
-    url(../img/hero.jpg);
+        rgba(8, 81, 120, 0.8),
+        rgba(133, 216, 206, 0.8)),
+    url(../img/guy.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
