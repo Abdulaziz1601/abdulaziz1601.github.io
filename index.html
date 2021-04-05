@@ -11,21 +11,19 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-box">
-            <img src="img/logo-white.png" alt="Logo" class="logo">    
+    <header class="header"><!-- header is block in BEM  -->
+        <div class="header__logo-box">
+            <img src="img/logo-white.png" alt="Logo" class="header__logo">    
         </div>
 
-        <div class="text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary-main">Abdulaziz</span>
-                <span class="heading-primary-sub">Web Developer</span>
+        <div class="header__text-box">
+            <h1 class="heading-primary"> <!--We can use header somewhere else so we can treat h1 as block-->
+                <span class="heading-primary--main">Abdulaziz</span> <!--main is modifier, 'cause main is slightly diff version of h1-->
+                <span class="heading-primary--sub">Web Developer</span>
             </h1>   
 
-            <a href="#" class="btn btn-white btn-animated">Watch Web-Sites</a>
+            <a href="#" class="btn btn--white btn--animated">Watch Web-Sites</a>
         </div>
- 
-        
 
     </header>
 
