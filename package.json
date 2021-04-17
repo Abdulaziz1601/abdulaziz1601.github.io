@@ -1,0 +1,23 @@
+{
+  "name": "abdulaziz1601.github.io",
+  "version": "1.0.0",
+  "description": "[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4169859&assignment_repo_type=AssignmentRepo)\r # Lab 2",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulaziz1601/abdulaziz1601.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulaziz1601/abdulaziz1601.github.io/issues"
+  },
+  "homepage": "https://github.com/Abdulaziz1601/abdulaziz1601.github.io#readme"
+}
