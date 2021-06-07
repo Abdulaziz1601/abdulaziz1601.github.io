@@ -1,23 +1,33 @@
 {
-  "name": "abdulaziz1601.github.io",
+  "name": "bootstrap",
   "version": "1.0.0",
-  "description": "[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4169859&assignment_repo_type=AssignmentRepo)\r # Lab 2",
+  "description": "Hello my Dears",
   "main": "index.js",
-  "dependencies": {
-    "node-sass": "^5.0.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Abdulaziz1601/abdulaziz1601.github.io.git"
+    "url": "git+https://github.com/Abdulaziz1601/uber.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Abdulaziz1601/abdulaziz1601.github.io/issues"
+    "url": "https://github.com/Abdulaziz1601/uber/issues"
   },
-  "homepage": "https://github.com/Abdulaziz1601/abdulaziz1601.github.io#readme"
+  "homepage": "https://github.com/Abdulaziz1601/uber#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
