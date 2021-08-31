@@ -375,6 +375,16 @@
 
         </div>
     </section>
-</body>
+</body>                                 
+<script>
+  document.querySelector('body').addEventListener('click', (e) => {
+    if(e.target.classList.contains('header__bottom-link--left') || e.target.parentElement.classList.contains('header__bottom-link--left')) {
+      document.querySelector('.header__bottom-link--left').classList.remove('header__bottom-link--active');
+      document.querySelector('.header__bottom-link--left').classList.add('header__bottom-link--active');
+    } else {
+      document.querySelector('.header__bottom-link--left').classList.remove('header__bottom-link--active');
+    }
+  })
+</script>
 
 </html>
