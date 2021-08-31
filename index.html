@@ -691,4 +691,16 @@
     </div>
   </footer>
 </body>
+
+<script>
+  document.querySelector('.header__bottom-link--left').addEventListener('click', () => {
+    if(e.target) {
+      document.querySelector('.header__bottom-link--left').classList.add('.show');
+      document.querySelector('.header__bottom-link--left').classList.remove('.hide');
+    } else {
+      document.querySelector('.header__bottom-link--left').classList.add('.hide');
+      document.querySelector('.header__bottom-link--left').classList.remove('.show');
+    }
+  })
+</script>
 </html>
