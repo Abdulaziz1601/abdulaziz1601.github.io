@@ -1,0 +1,29 @@
+.list-info {
+  padding-bottom: 40px;
+}
+
+.list-info__text {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+}
+
+.list-info__list {
+  @include reset-list;
+  margin-bottom: 30px;
+}
+
+.list-info__item {
+  margin-bottom: 36px;
+}
+
+.list-info__italic {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.list-info__bolt {
+  font-weight: bold;
+}

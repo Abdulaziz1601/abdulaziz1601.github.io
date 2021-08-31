@@ -1,0 +1,39 @@
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/normalize";
+@import "./base/general";
+@import "./base/visually-hidden";
+
+@import "./blocks/container";
+@import "./blocks/site-header";
+@import "./blocks/hero";
+@import "./blocks/services";
+@import "./blocks/spareparts";
+@import "./blocks/stock";
+@import "./blocks/news";
+@import "./blocks/online-store";
+@import "./blocks/spareparts-info";
+@import "./blocks/cardan-shafts";
+@import "./blocks/list-info";
+@import "./blocks/profile";
+@import "./blocks/myaccount";
+@import "./blocks/history";
+@import "./blocks/site-footer";
+
+
+@import "./blocks/profile-modal";
+@import "./blocks/contacts";
+@import "./blocks/catalog";
+@import "./blocks/advantages";
+@import "./blocks/signup";
+@import "./blocks/brand";
+@import "./blocks/modals";
+@import "./blocks/form";
+@import "./blocks/product";
+@import "./blocks/aboutus";
+@import "./blocks/certificate";
+@import "./blocks/about-all";
+@import "./blocks/vinrequest";
+
+@import "./fonts";
+
