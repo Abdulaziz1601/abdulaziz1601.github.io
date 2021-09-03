@@ -70,12 +70,72 @@
 
 @include breakpoint-down(768) {
     .mission__header {
-        background-size: 50%;
+        background: $primary;
+    }
+
+    .mission__subtitle {
+        width: 100%;
     }
 
     .mission__header__title,
     .mission__main__title {
         font-size: 35px;
+    }
+
+    .mission__main__title {
+        margin-top: 24px;
+    }
+
+    .mission__main__block {
+        width: 400px;
+    }
+    .mission__main__block:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .mission__main__block {
+        margin-top: 20px;
+    }
+    .mission__main__wrapper {
+        margin: 0 auto;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@include breakpoint-down(575) {
+    .mission__header {
+        padding: 20px 30px;
+    }
+    .mission__header__title,
+    .mission__main__title {
+        font-size: 20px;
+    }
+
+    .mission__subtitle,
+    .mission__block__subtitle {
+        font-size: 16px;
+    }
+    .mission__main__block {
+        width: 280px;
+    }
+    .mission__main__block {
+        margin-top: 50px;
+    }
+
+    .mission__main__wrapper {
+        margin-top: 0;
+    }
+
+    .mission__main__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mission__block__title {
+        font-size: 18px;
     }
 }
 
