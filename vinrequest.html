@@ -285,72 +285,82 @@
             </div>
         </div>
     </header>
-</body>                                 
-<script>
-  document.querySelector('body').addEventListener('click', (e) => {
-    if(e.target.classList.contains('header__bottom-link--left') || e.target.parentElement.classList.contains('header__bottom-link--left')) {
-      document.querySelector('.header__bottom-link--left').classList.remove('header__bottom-link--active');
-      document.querySelector('.header__bottom-link--left').classList.add('header__bottom-link--active');
-    } else {
-      document.querySelector('.header__bottom-link--left').classList.remove('header__bottom-link--active');
-    }
-  })
-</script>
 
-<section class="vin">
-    <div class="container">
-        <div class="title title__meduim vin__title">
-            Запрос по VIN
+    <div class="links">
+        <div class="container">
+            <a href="./index.html" class="link__item">
+                Главная
+                <img class="link__item__arrow" src="imgs/partsAndProduct/arrow-ios-right.svg" alt="">
+            </a>
+            <a href="./vinrequest.html" class="link__item link__item_active">
+                Запрос по VIN
+            </a>
         </div>
-
-        <form class="vin__form about__form mt_24" action="#">
-            <div class="about__feed-wrapper">
-                <div class="about__input-wrapper">
-                    <label for="brand">Модель автомобиля</label>
-                    <input name="brand" required placeholder="NU8821" type="text">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-                <div class="about__input-wrapper">
-                    <label for="year">Год выпуска автомобиля</label>
-                    <input name="year" required placeholder="2016">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-            </div>
-            <div class="about__feed-wrapper">
-                <div class="about__input-wrapper">
-                    <label for="chassis">Номер шасси</label>
-                    <input name="chassis" required placeholder="AXN645674">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-                <div class="about__input-wrapper">
-                    <label for="spareparts">Необходимые запчасти</label>
-                    <input name="spareparts" required placeholder="Тормозные колодки">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-            </div>
-            <div class="title title_meduim vin__title-2"></div>
-            <div class="about__feed-wrapper">
-                <div class="about__input-wrapper">
-                    <label for="name">Имя</label>
-                    <input name="name" required placeholder="Ваше Имя" type="text">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-                <div class="about__input-wrapper">
-                    <label for="phone">Телефон</label>
-                    <input name="phone" type="tel" required placeholder="Ваш телефон">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-            </div>
-            <div class="about__feed-wrapper">
-                <div class="about__input-wrapper">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" required placeholder="Ваш Email">
-                    <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
-                </div>
-            </div>
-            <button class="mt_24 btn btn_blue about__btn">Отправить сообщение</button>
-        </form>
     </div>
-</section>
+    <section class="vin">
+        <div class="container">
+            <div class="title title__meduim vin__title">
+                Запрос по VIN
+            </div>
+
+            <form class="vin__form about__form mt_24" action="#">
+                <div class="about__feed-wrapper">
+                    <div class="about__input-wrapper">
+                        <label for="brand">Модель автомобиля</label>
+                        <input name="brand" required placeholder="NU8821" type="text">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                    <div class="about__input-wrapper">
+                        <label for="year">Год выпуска автомобиля</label>
+                        <input name="year" required placeholder="2016">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="about__feed-wrapper">
+                    <div class="about__input-wrapper">
+                        <label for="chassis">Номер шасси</label>
+                        <input name="chassis" required placeholder="AXN645674">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                    <div class="about__input-wrapper">
+                        <label for="spareparts">Необходимые запчасти</label>
+                        <input name="spareparts" required placeholder="Тормозные колодки">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="title title_small vin__title-2">Персональные данные</div>
+                <div class="about__feed-wrapper">
+                    <div class="about__input-wrapper">
+                        <label for="name">Имя</label>
+                        <input name="name" required placeholder="Ваше Имя" type="text">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                    <div class="about__input-wrapper">
+                        <label for="phone">Телефон</label>
+                        <input name="phone" type="tel" required placeholder="Ваш телефон">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="about__feed-wrapper">
+                    <div class="about__input-wrapper">
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required placeholder="Ваш Email">
+                        <button type="reset"><img src="imgs/close_min.svg" alt=""></button>
+                    </div>
+                    <div class="about__input-wrapper">
+                        <label>Какие запчасти вас интересуют?</label>
+                        <div class="about__checkbox-wrapper">
+                            <input type="checkbox" name="original">
+                            <label for="original">Оригинальные</label>
+                            <input type="checkbox" name="analog">
+                            <label for="original">Аналоги</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="mt_24 btn btn_blue about__btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+</body>
 
 </html>
