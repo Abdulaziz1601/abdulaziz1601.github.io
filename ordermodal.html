@@ -341,70 +341,67 @@
             </div>
         </div>
     </header>
-    <div class="links">
-        <div class="container">
-            <a href="./index.html" class="link__item">
-                Главная
-                <img class="link__item__arrow" src="imgs/partsAndProduct/arrow-ios-right.svg" alt="">
-            </a>
-            <a href="./aboutUs.html" class="link__item link__item_active">
-                О компании
-            </a>
-        </div>
-    </div>
+    <section class="ordermodal">
 
-    <section class="mission">
-        <div class="container">
-            <div class="mission__header">
-                <div class="title title_big mission__header__title">Наша миссия</div>
-                <div class="subtitle subtitle_big mission__subtitle">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore
-                </div>
+        <div class="order" id="order">
+            <div class="modal__close">
+                <img src="imgs/close-form.svg" alt="">
             </div>
-            <div class="mission__main">
-                <div class="title title_big mission__main__title">Ценности</div>
-                <div class="mission__main__wrapper">
-                    <div class="mission__main__block">
-                        <div class="mission__main__img">
-                            <img src="imgs/main__block-1.png" alt="">
-                        </div>
-                        <div class="title title_small mission__block__title">Честность</div>
-                        <div class="subtitle subtitle_big mission__block__subtitle">Sed ut perspiciatis unde omnis iste
-                            natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem `</div>
-                    </div>
-                    <div class="mission__main__block">
-                        <div class="mission__main__img">
-                            <img src="imgs/main__block-2.png" alt="">
-                        </div>
-                        <div class="title title_small mission__block__title">Доверие</div>
-                        <div class="subtitle subtitle_big mission__block__subtitle">Sed ut perspiciatis unde omnis iste
-                            natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem </div>
-                    </div>
-                </div>
-                <div class="mission__main__wrapper">
-                    <div class="mission__main__block">
-                        <div class="mission__main__img">
-                            <img src="imgs/main__block-3.png" alt="">
-                        </div>
-                        <div class="title title_small mission__block__title">Ответственность</div>
-                        <div class="subtitle subtitle_big mission__block__subtitle">Sed ut perspiciatis unde omnis iste
-                            natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem </div>
-                    </div>
-                    <div class="mission__main__block">
-                        <div class="mission__main__img">
-                            <img src="imgs/main__block-4.png" alt="">
-                        </div>
-                        <div class="title title_small mission__block__title">Взаимопомощь</div>
-                        <div class="subtitle subtitle_big mission__block__subtitle">Sed ut perspiciatis unde omnis iste
-                            natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem </div>
-                    </div>
-                </div>
+            <div class="title title_large modal__title">Заказ <span>№89079</span></div>
+            <div class="order__info">
+                <div class="order__date-time">15.11.2021</div>
+                <div class="order__place">Московская область, г.Москв проспект Тшебница, д 21 кв 33</div>
             </div>
+            <table class="order__table">
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Скидка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Товар">
+                            <div class="order__table-wrapper">
+                                <img src="imgs/rect.png" alt="">
+                                <span>Пропеллер для подсноска трансмиссии</span>
+                            </div>
+                        </td>
+                        <td data-label="Цена">25 000 руб</td>
+                        <td data-label="Скидка">0 руб</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Товар">
+                            <div class="order__table-wrapper">
+                                <img src="imgs/rect.png" alt="">
+                                <span>Пропеллер для подсноска трансмиссии</span>
+                            </div>
+                        </td>
+                        <td data-label="Цена">25 000 руб</td>
+                        <td data-label="Скидка">0 руб</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Товар">
+                            <div class="order__table-wrapper">
+                                <img src="imgs/rect.png" alt="">
+                                <span>Пропеллер для подсноска трансмиссии</span>
+                            </div>
+                        </td>
+                        <td data-label="Цена">25 000 руб</td>
+                        <td data-label="Скидка">0 руб</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn_blue order__btn">Повторить заказ</button>
+        </div>
+    </section>
+
+    <section class="addmodal">
+        <div class="add" id="add">
+            <div class="title title_small addmodal__title">Заказ добавлен в корзину</div>
+            <div class="addmodal__img"><img src="imgs/ordermodal_check.svg" alt=""></div>
+            <button class="btn btn_blue addmodal__btn">Закрыть</button>
         </div>
     </section>
 </body>

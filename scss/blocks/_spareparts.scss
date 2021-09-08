@@ -158,6 +158,17 @@
     max-width: 375px;
   }
 }
+@include breakpoint-down(450) {
+  .spareparts__bottom {
+    justify-content: center;
+  }
+  .spareparts__top-item {
+    margin-right: 0;
+  }
+  .spareparts__item-link {
+    width: 150px;
+  }
+}
 @include breakpoint-down(400) {
   .spareparts__top-item {
     flex-direction: row;
@@ -176,13 +187,5 @@
   }
   .spareparts__top-button {
     margin: 0;
-  }
-}
-@include breakpoint-down(450) {
-  .spareparts__bottom {
-    justify-content: center;
-  }
-  .spareparts__item-link {
-    width: 150px;
   }
 }

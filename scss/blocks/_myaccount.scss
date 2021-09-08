@@ -150,6 +150,12 @@
 
   .myaccount__button {
     width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .myaccount__button-text {
+    text-align: center;
   }
 
   .myaccount__save {

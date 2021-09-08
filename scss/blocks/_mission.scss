@@ -76,7 +76,10 @@
     .mission__subtitle {
         width: 100%;
     }
-
+    .title,
+    .subtitle {
+        text-align: center;
+    }
     .mission__header__title,
     .mission__main__title {
         font-size: 35px;

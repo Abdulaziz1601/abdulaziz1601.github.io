@@ -1,6 +1,6 @@
 .hero {
-  background-image: url("../imgs/hero.png") ;
-  background-position: center;
+  background-image: url("../imgs/hero.png");
+  background-position: calc(50% + 10px)  center;
   background-repeat: no-repeat;
   margin-top: 24px;
   margin-bottom: 62px;
@@ -78,9 +78,8 @@
 }
 @include breakpoint-down(566) {
   .hero {
-    background-image: linear-gradient(to left, rgba(54, 61, 248, 0.376) , rgba(55, 58, 248, 0.322) ) , url("../imgs/header-bg.png");
-    background-position: center;
-    background-size: cover;
+    background-image: url("../imgs/header-bg.png");
+    background-position: calc(50% + 300px) 30px;
     margin-top: 20px;
     margin-bottom: 16px;
   }

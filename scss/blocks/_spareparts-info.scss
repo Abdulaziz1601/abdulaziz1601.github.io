@@ -107,3 +107,9 @@
     align-items: center;
   }
 }
+@include breakpoint-down(388) {
+  .spareparts__title {
+    font-size: 20px;
+    text-align: center;
+  }
+}

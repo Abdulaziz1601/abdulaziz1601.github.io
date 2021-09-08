@@ -4,6 +4,7 @@
 }
 
 .certificate__wrapper {
+    width: 100%;
     margin-top: 24px;
     display: flex;
     align-items: center;
@@ -19,7 +20,7 @@
 }
 
 .certificate__item {
-    width: 658px;
+    width: 100%;
     padding: 24px;
     display: flex;
     align-items: center;
@@ -61,10 +62,6 @@
 }
 
 @include breakpoint-down(1440) {
-    .certificate__item {
-        width: 550px;
-    }
-
     .certificate__descr {
         width: 300px;
     }
@@ -132,6 +129,7 @@
         flex-direction: column;
     }
     .certificate__item {
+        width: 100%;
         padding: 15px;
         &:first-child {
             margin-right: 0;
@@ -162,7 +160,7 @@
     }
     .certificate__img {
         width: 200px;
-        height: 230px;
+        height: 300px;
     }
 
     .certificate__descr{

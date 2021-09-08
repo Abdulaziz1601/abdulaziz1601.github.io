@@ -102,23 +102,23 @@
                             Войти
                         </a>
 
-                        <div class="profile">
-                            <ul class="profile__list">
-                                <li class="profile__item">
-                                    <a class="profile__link" href="#">Мой аккаунт</a>
+                        <div class="profile-modal">
+                            <ul class="profile-modal__list">
+                                <li class="profile-modal__item">
+                                    <a class="profile-modal__link" href="#">Мой аккаунт</a>
                                 </li>
-                                <li class="profile__item">
-                                    <a class="profile__link" href="#">Мои заказы</a>
+                                <li class="profile-modal__item">
+                                    <a class="profile-modal__link" href="#">Мои заказы</a>
                                 </li>
-                                <li class="profile__item">
-                                    <a class="profile__link" href="#">История покупок</a>
+                                <li class="profile-modal__item">
+                                    <a class="profile-modal__link" href="#">История покупок</a>
                                 </li>
-                                <li class="profile__item">
-                                    <a class="profile__link profile__link--exit" href="#">Выйти</a>
+                                <li class="profile-modal__item">
+                                    <a class="profile-modal__link profile-modal__link--exit" href="#">Выйти</a>
                                 </li>
-                                <li class="profile__close">
-                                    <button class="profile__btn">
-                                        <img class="profile__btn-img" src="imgs/close.svg" width="24" height="24"
+                                <li class="profile-modal__close">
+                                    <button class="profile-modal__btn">
+                                        <img class="profile-modal__btn-img" src="imgs/close.svg" width="24" height="24"
                                             alt="close">
                                     </button>
                                 </li>
@@ -149,9 +149,65 @@
                                 Войти по номеру телефона
                             </a>
                         </div>
+                    </div>
 
+                    <div class="signup">
+                        <div class="signup__box">
+                            <h2 class="signup__title">
+                                Регистрация аккаунта
+                            </h2>
+
+                            <button class="signup__close">
+                                <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24"
+                                    alt="close">
+                            </button>
+
+                            <form class="signup__form">
+                                <span class="signup__form-text">Имя и фамилию</span>
+                                <input class="signup__input" type="text" placeholder="Дмитрий Суворов" required>
+                                <span class="signup__form-text">e-mail адрес</span>
+                                <input class="signup__input" type="email" placeholder="example@outlook.com" required>
+                                <button class="signup__button">Зарегестрироваться</button>
+                            </form>
+                        </div>
+
+                        <div class="signup__box-enter">
+                            <h2 class="signup__title">
+                                Вход на сайт
+                            </h2>
+
+                            <button class="signup__close">
+                                <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24"
+                                    alt="close">
+                            </button>
+
+                            <form class="signup__form">
+                                <span class="signup__form-text">Телефон</span>
+                                <input class="signup__input" type="tel" placeholder="+7" required>
+                                <button class="signup__button-enter">Получить код</button>
+                            </form>
+                        </div>
+
+                        <div class="signup__box-kod">
+                            <h2 class="signup__title">
+                                Введите код
+                            </h2>
+
+                            <button class="signup__close">
+                                <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24"
+                                    alt="close">
+                            </button>
+
+                            <form class="signup__form">
+                                <span class="signup__form-text">Код</span>
+                                <span class="signup__form-error">Неверный код</span>
+                                <input class="signup__input" type="text" placeholder="A1B2C3" required>
+                                <button class="signup__button-kod">Войти</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
                 <ul class="header__bottom-list">
                     <li>
                         <a class="header__bottom-link header__bottom-link--left" href="#">
@@ -237,10 +293,10 @@
                         </ul>
                     </li>
                     <li class="header__bottom-item">
-                        <a href="" class="header__bottom-link">Автокаталог</a>
+                        <a href="#" class="header__bottom-link">Автокаталог</a>
                     </li>
                     <li class="header__bottom-item">
-                        <a href="./aboutUs.html" class="header__bottom-link">О компании</a>
+                        <a href="#" class="header__bottom-link">О компании</a>
                     </li>
                     <li class="header__bottom-item">
                         <a href="#" class="header__bottom-link">Сотрудничество</a>
@@ -250,10 +306,10 @@
                     </li>
                     <li class="header__bottom-contact">
                         <button class="header__bottom-contacts">
-                            <p class="header__bottom-number">
+                            <span class="header__bottom-number">
                                 8 800 444 55 66 <br>
                                 <span class="header__bottom-text">Беслпатный звонок по РФ</span>
-                            </p>
+                            </span>
                             <img class="header__bottom-down" src="./imgs/arrow-ios-down.png" width="12" height="12"
                                 alt="arrow ios down">
                             <img class="header__bottom-close" src="imgs/close.svg" width="12" height="12"
@@ -272,7 +328,7 @@
                             <p class="contacts__text">
                                 Бесплатный звонок по РФ
                             </p>
-                            <a href="tel:+8 8007757072" class="contacts__tel contacts__tel--head">8 800 775 70 72</a>
+                            <a href="tel:+88007757072" class="contacts__tel contacts__tel--head">8 800 775 70 72</a>
                             <p class="contacts__text">
                                 Другие номера
                             </p>

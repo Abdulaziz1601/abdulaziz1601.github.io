@@ -3,6 +3,7 @@
 }
 
 .about-all__wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +11,7 @@
 
 .about-all__block {
     padding: 24px 16px 16px;
-    width: 430px;
+    width: 100%;
     min-height: 208px;
     background: #F2F2F2;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
@@ -36,14 +37,14 @@
 
 .about-all__descr {
     margin-top: 12px;
-    width: 360px;
+    width: 100%;
 }
 
 .about-all__block_big {
     padding: 32px;
     margin-top: 80px;
     width: 660px;
-    height: 370px;
+    min-height: 370px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
     border-radius: 13px;
     background: url('../imgs/about-all__1.png') 100% 100% no-repeat, #f7f7f7;
@@ -66,20 +67,13 @@
     margin-top: 40px;
 }
 
-@include breakpoint-down(1440) {
-    .about-all__block {
-        width: 350px;
-        min-height: 220px;
-    }
-}
-
 @include breakpoint-down(1200) {
     br {
         display: none;
     }
 
     .about-all__block {
-        width: 300px;
+        // width: 300px;
         min-height: 220px;
     }
 
@@ -121,6 +115,15 @@
     .about-all__block {
         width: 330px;
 
+        &:nth-child(1) {
+            margin-right: auto;
+        }
+
+        &:nth-child(2) {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
         &:last-child {
             margin: 0;
             margin-top: 20px;
@@ -128,7 +131,7 @@
     }
 
     .about-all__block_big {
-        width: 80%;
+        width: 100%;
 
         &:nth-child(n) {
             margin: 0;
@@ -148,16 +151,28 @@
             margin-top: 20px;
         }
 
-        width: 400px;
+        width: 100%;
 
     }
 
+    .about-all__img {
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+    }
+
+    .about-all__descr {
+        width: 100%;
+        text-align: center;
+    }
     .about-all__block_big {
-        height: 300px;
+        min-height: 300px;
         padding: 20px;
+
         &:nth-child(n) {
             background-size: 50%;
         }
+
         .about-all__descr {
             width: 80%;
         }
@@ -165,26 +180,32 @@
 }
 
 @include breakpoint-down(575) {
-    .about-all__block {
-        width: 80%;
-    }
-
     .about-all__title {
         font-size: 20px;
     }
 
     .about-all__descr {
         font-size: 14px;
-        width: 90%;
     }
 
     .about-all__block_big {
-        min-height: 320px;
+        min-height: 180px;
+
         &:nth-child(n) {
-            background: #f7f7f7;;
+            background: #f7f7f7;
         }
+        
+        .about-all__descr {
+            font-size: 14px;
+            width: 100%;
+        }
+
         .title {
             font-size: 20px;
+        }   
+        .about-all__btn {
+            margin: 0 auto;
+            margin-top: 50px;
         }
     }
 }

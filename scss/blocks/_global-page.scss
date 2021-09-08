@@ -1,0 +1,29 @@
+.global-page {
+  margin-top: 24px;
+  padding-bottom: 40px;
+}
+
+.global-page__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.global-page__list {
+  @include reset-list;
+}
+
+.global-page__item {
+  margin-bottom: 35px;
+}
+
+.global-page__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+}
