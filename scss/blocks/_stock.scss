@@ -1,6 +1,6 @@
 .stock {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   overflow-x: hidden;
 }
 
@@ -36,14 +36,14 @@
   text-align: center
 }
 
-
 .stock__list {
+  position: relative;
   @include reset-list;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
-  height: 218px;
+  width: 100%;
+  height: 337px;
   overflow-x: hidden;
   margin: 0 auto;
 }
@@ -58,10 +58,20 @@
   }
 }
 
+.stock__img {
+  max-width: 397px;
+  height: 190px;
+}
+
+.stock__item--active .stock__img {
+  max-width: 522px;
+  height: 218px;
+}
+
 .stock__button {
   width: 40px;
   height: 40px;
-  background-color: rgb(163, 162, 162);
+  background-color: #fff;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -69,24 +79,52 @@
   &--left {
     position: absolute;
     z-index: 1;
-    left: 30px;
+    left: 0;
     transform: translateY(-50%);
-    background-image: url("../../imgs/arrow-ios-right-1.svg");
+    background-image: url("../imgs/arrow-ios-right-1.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
   &--right {
     position: absolute;
     z-index: 1;
-    right: 30px;
+    right: 0;
     transform: translateY(-50%);
-    background-image: url("../../imgs/arrow-ios-right.svg");
+    background-image: url("../imgs/arrow-ios-right.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
 }
 
+@include breakpoint-down(915) {
+  .stock__img {
+    max-width: 266px;
+    height: 111px;
+  }
+  .stock__item--active .stock__img {
+    max-width: 266px;
+    height: 111px;
+  }
+  .stock__item {
+    opacity: 1;
+    &--active {
+      margin-left: 16px;
+      margin-right: 16px;
+      transform: scale(1);
+    }
+  }
+  .stock__list {
+    height: 118px;
+    justify-content: flex-start;
+  }
+  .stock__button {
+    display: none;
+  }
+}
 @include breakpoint-down(400) {
+  .stock__list {
+    margin: 18px 0;
+  }
   .stock__top {
     margin-bottom: 0;
   }

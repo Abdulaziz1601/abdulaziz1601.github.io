@@ -82,7 +82,7 @@
 @include breakpoint-down(860){
   .cooperation-footer__top {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .cooperation-footer__input {
     width: 300px;
@@ -95,8 +95,11 @@
   }
 }
 @include breakpoint-down(610){
+  .cooperation-footer__box {
+    width: 100%;
+  }
   .cooperation-footer__input {
-    width: 300px;
+    width: 100%;
     margin-right: 0;
   }
 }

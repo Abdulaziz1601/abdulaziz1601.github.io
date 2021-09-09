@@ -46,6 +46,13 @@
     max-width: 500px;
     width: 100%;
   }
+  .hero {
+    background-image: url("../imgs/hero.png");
+    background-position: calc(50% + 10px)  center;
+    background-repeat: no-repeat;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
 }
 @include breakpoint-down(890) {
   .hero__box {
@@ -79,12 +86,13 @@
 @include breakpoint-down(566) {
   .hero {
     background-image: url("../imgs/header-bg.png");
-    background-position: calc(50% + 300px) 30px;
+    background-position: calc(50% + 300px) 0;
     margin-top: 20px;
     margin-bottom: 16px;
   }
   .hero__box {
     padding-bottom: 25px;
+    padding-top: 38px;
   }
   .hero__title {
     font-weight: bold;
@@ -101,6 +109,11 @@
 @include breakpoint-down(470) {
   .hero {
     padding-right: 20px;
+  }
+}
+@include breakpoint-down(419) {
+  .hero__box {
+    padding-top: 28px;
   }
 }
 @include breakpoint-down(390) {

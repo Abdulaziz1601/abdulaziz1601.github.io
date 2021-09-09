@@ -38,6 +38,13 @@
   color: #000000;
 }
 
+@include breakpoint-down(1032) {
+  .online-store__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
 @include breakpoint-down(375) {
   .online-store__item--none {
     display: none;

@@ -19,7 +19,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 363px;
+  max-width: 363px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -27,12 +28,13 @@
 }
 
 .signup__box-enter {
-  display: none;
+  // display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 363px;
+  max-width: 363px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -40,12 +42,13 @@
 }
 
 .signup__box-kod {
-  // display: none;
+  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 363px;
+  max-width: 363px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -70,6 +73,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .signup__close-img {
@@ -163,4 +167,16 @@
   border: none;
   outline: none;
   padding: 12px 0;
+}
+
+@include breakpoint-down(400) {
+  .signup__box-kod {
+    max-width: 300px;
+  }
+  .signup__box {
+    max-width: 300px;
+  }
+  .signup__box-enter {
+    max-width: 300px;
+  }
 }

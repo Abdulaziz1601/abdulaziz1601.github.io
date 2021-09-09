@@ -90,24 +90,24 @@
   }
 }
 @include breakpoint-down(565) {
+  .paymentForm__list {
+    display: block;
+    width: 100%;
+  }
   .paymentForm__item {
     margin-right: 0;
   }
   .paymentForm__link {
-    width: 350px;
+    width: 100%;
   }
 }
 @include breakpoint-down(404) {
   .paymentForm__list {
     margin-bottom: 20px;
   }
-  .paymentForm__link {
-    width: 300px;
-  }
 }
 @include breakpoint-down(356) {
   .paymentForm__link {
-    width: 250px;
     height: 150px;
   }
 }

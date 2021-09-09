@@ -1,178 +1,178 @@
 .checkout-form {
-    margin-top: 43px;
+  margin-top: 43px;
 }
 
 label {
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    color: #222222;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
 
-    &:first-child {
-        margin-top: 0;
-    }
+  &:first-child {
+      margin-top: 0;
+  }
 }
 
-input {
-    font-size: 12px;
-    margin-top: 8px;
-    width: 100%;
-    height: 48px;
-    border: none;
-    padding: 16px;
-    border-radius: 12px;
-    position: relative;
-    background: $primary;
-    background: url('../imgs/close-form.svg') calc(100% - 18px) 50% no-repeat, $primary;
+.input-global {
+  font-size: 12px;
+  margin-top: 8px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  position: relative;
+  background: $primary;
+  background: url('../imgs/close-form.svg') calc(100% - 18px) 50% no-repeat, $primary;
 }
 
 #comment {
-    width: 100%;
-    background: $primary;
-    font-weight: 500;
-    margin-top: 8px;
-    padding: 16px;
-    height: 96px;
+  width: 100%;
+  background: $primary;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 16px;
+  height: 96px;
 }
 
 .form__wrapper {
-    width: 430px;
-    position: relative;
-    margin-top: 24px;
+  width: 430px;
+  position: relative;
+  margin-top: 24px;
 
-    .comment {
-        top: 32px;
-        width: 24px;
-        height: 24px;
-    }
+  .comment {
+      top: 32px;
+      width: 24px;
+      height: 24px;
+  }
 }
 
 button[type="reset"] {
-    border: none;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
 
 
 .about__form {
-    width: 1003px;
+  width: 1003px;
 }
 
 .about__feed-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__input-wrapper {
-    width: 315px;
-    position: relative;
-    &:first-child {
-        margin-left: 0;
-    }
+  width: 315px;
+  position: relative;
+  &:first-child {
+      margin-left: 0;
+  }
 }
 
 .about__comment {
-    width: 100%;
-    height: 111px;
+  width: 100%;
+  height: 111px;
 }
 
 .form__wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .about__btn {
-    padding: 0 50px;
-    font-size: 14px;
-    width: 256px;
+  padding: 0 50px;
+  font-size: 14px;
+  width: 256px;
 }
 
 .about__btn {
-    padding: 0 100px;
-    width: 430px;
-    height: 50px;
+  padding: 0 100px;
+  width: 430px;
+  height: 50px;
 }
 
 button[type="reset"] {
-    background: transparent;
+  background: transparent;
 }
 
 @include breakpoint-down(991) {
-    .about__feed__title {
-        font-size: 30px;
-    }
+  .about__feed__title {
+      font-size: 30px;
+  }
 
-    .about__form {
-        width: 100%;
-    }
+  .about__form {
+      width: 100%;
+  }
 
-    .about__input-wrapper {
-        margin-left: 10px;
-    }
+  .about__input-wrapper {
+      margin-left: 10px;
+  }
 
-    .about__feed-wrapper:first-child {
-        margin-left: 0;
-    }
+  .about__feed-wrapper:first-child {
+      margin-left: 0;
+  }
 
 
-    .about__btn {
-        margin: 0 auto;
-        margin-top: 20px;
-    }
+  .about__btn {
+      margin: 0 auto;
+      margin-top: 20px;
+  }
 }
 
 @include breakpoint-down(768) {
-    .about__feed__title {
-        font-size: 25px;
-    }
+  .about__feed__title {
+      font-size: 25px;
+  }
 
-    .about__form {
-        width: 100%;
+  .about__form {
+      width: 100%;
 
-        label {
-            font-size: 14px;
-        }
+      label {
+          font-size: 14px;
+      }
 
-        input {
-            font-size: 14px;
-            padding: 8px;
-        }
+      .input-global {
+          font-size: 14px;
+          padding: 8px;
+      }
 
-        textarea {
-            font-size: 14px;
-        }
-    }
+      textarea {
+          font-size: 14px;
+      }
+  }
 
-    .about__input-wrapper {
-        margin-left: 10px;
-    }
+  .about__input-wrapper {
+      margin-left: 10px;
+  }
 
-    .about__input-wrapper:first-child {
-        margin-left: 0;
-    }
+  .about__input-wrapper:first-child {
+      margin-left: 0;
+  }
 }
 
 @include breakpoint-down(575) {
-    .form__wrapper {
-        width: 100%;
-    }
+  .form__wrapper {
+      width: 100%;
+  }
 
-    .about__btn {
-        padding: 0 50px;
-        font-size: 14px;
-        width: 256px;
-    }
+  .about__btn {
+      padding: 0 50px;
+      font-size: 14px;
+      width: 256px;
+  }
 
-    .about__form {
+  .about__form {
 
-        input {
-            font-size: 10px;
-        }
-    }
+      .input-global {
+          font-size: 10px;
+      }
+  }
 
-    button[type="reset"] {
-        display: none;
-    }
+  button[type="reset"] {
+      display: none;
+  }
 }

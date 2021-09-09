@@ -149,7 +149,7 @@
 }
 @include breakpoint-down(930) {
   .spareparts__bottom {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -160,7 +160,7 @@
 }
 @include breakpoint-down(450) {
   .spareparts__bottom {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .spareparts__top-item {
     margin-right: 0;

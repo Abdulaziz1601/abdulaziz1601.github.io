@@ -37,7 +37,7 @@
 @include breakpoint-down(1287) {
   .services__list {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .services__item {
     margin-bottom: 16px;

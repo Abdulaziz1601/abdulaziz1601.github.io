@@ -12,6 +12,10 @@
   color: #fff;
 }
 
+.header__bottom-contact--active .contacts{
+  display: block;
+}
+
 .contacts__box {
   display: flex;
   align-items: center;

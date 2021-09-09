@@ -205,7 +205,7 @@
 }
 @include breakpoint-down(454) {
   .site-footer__top {
-    background-position: center 220px;
+    background-position: center 179px;
     background-size: 300px;
   }
   .site-footer__text {
@@ -232,5 +232,20 @@
   }
   .site-footer__item p {
     width: 100%;
+  }
+}
+@include breakpoint-down(375) {
+  .site-footer__title {
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .site-footer__text {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+@include breakpoint-down(350) {
+  .site-footer__top {
+    background-size: 250px;
   }
 }

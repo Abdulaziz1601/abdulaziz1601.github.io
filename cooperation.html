@@ -8,7 +8,7 @@
   <title>Cooperation</title>
 </head>
 <body>
-  <h1 class="visually-hidden">ST</h1>
+  <h1 class="visually-hidden">Cooperation</h1>
   <header class="header">
       <div class="header__top">
         <div class="container">
@@ -48,6 +48,52 @@
                 <a class="header__nav-info" href="#">
                   <img src="imgs/person.png" width="24" height="24" alt="profil">
                 </a>
+
+                <div class="header__modal">
+                  <ul class="header__modal-list">
+                    <li class="header__modal-item">
+                      <a class="header__modal-link" href="#">Мой аккаунт</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="header__modal-link" href="#">Мои заказы</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="header__modal-link" href="#">История покупок</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="header__modal-link header__modal-link--exit" href="#">Выйти</a>
+                    </li>
+                    <li class="header__modal-close">
+                      <button class="header__modal-btn">
+                        <img class="header__modal-btn-img" src="imgs/close.svg" width="24" height="24" alt="close">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="header-advantages">
+                  <h3 class="header-advantages__title">
+                    Приемущества аккаунта
+                  </h3>
+                  <ul class="header-advantages__list">
+                    <li class="header-advantages__item">
+                      <img class="header-advantages__img" src="imgs/Clock.png" width="32" height="32" alt="img">
+                      <p class="header-advantages__text">Заказывать товары с быстрой доствакой</p>
+                    </li>
+                    <li class="header-advantages__item">
+                      <img class="header-advantages__img" src="imgs/Heart.png" width="32" height="32" alt="img">
+                      <p class="header-advantages__text">Участвовать в акциях и оплачивать покупки бонусами</p>
+                    </li>
+                    <li class="header-advantages__item">
+                      <img class="header-advantages__img" src="imgs/Download.png" width="32" height="32" alt="img">
+                      <p class="header-advantages__text">Пользоваться иллюстративным автокоталогом</p>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="header-advantages__link">
+                    Войти по номеру телефона
+                  </a>
+                </div>
                 <a class="header__nav-info" href="#">
                   <img src="imgs/shopping-cart.png" width="24" height="24" alt="shopping">
                 </a>
@@ -63,7 +109,7 @@
               <img src="./imgs/logo.svg" width="200" height="48" alt="logo">
             </a>
 
-            <form action="header__bottom-form">
+            <form class="header__bottom-form">
               <select class="header__bottom-brand">
                 <option value="none" selected disabled hidden>Выберите марку</option>
                 <option value="Hino">Hino</option>
@@ -332,7 +378,7 @@
       <div class="container">
           <a href="#" class="link__item">
               Главная
-              <img class="link__item__arrow" src="imgs/arrow-ios-right.svg" alt="">
+              <img class="link__item__arrow" src="./imgs/partsAndProduct/arrow-ios-right.svg" alt="arrow ios right">
           </a>
           <a href="#" class="link__item link__item_active">
               Сотрудничество

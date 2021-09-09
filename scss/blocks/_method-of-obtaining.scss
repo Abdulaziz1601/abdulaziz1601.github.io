@@ -144,6 +144,10 @@
   }
 }
 @include breakpoint-down(565) {
+  .methodOfObtaining__list {
+    display: block;
+    width: 100%;
+  }
   .methodOfObtaining {
     margin-bottom: 20px;
   }
@@ -151,19 +155,20 @@
     margin-right: 0;
   }
   .methodOfObtaining__link {
-    width: 350px;
+    width: 100%;
+    height: auto;
+  }
+  .methodOfObtaining__address {
+    max-width: 100%;
   }
 }
 @include breakpoint-down(404) {
   .methodOfObtaining__list {
     margin-bottom: 20px;
   }
-  .methodOfObtaining__link {
-    width: 300px;
-  }
 }
-@include breakpoint-down(356) {
-  .methodOfObtaining__link {
-    width: 250px;
+@include breakpoint-down(500){
+  .methodOfObtaining__title {
+    font-size: 20px;
   }
 }
