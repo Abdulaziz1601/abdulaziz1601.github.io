@@ -83,10 +83,6 @@ input {
   font-size: 12px;
 }
 
-button[type="reset"] {
-  display: none;
-}
-
 .about__btn {
   padding: 0 100px;
   width: 430px;
@@ -205,9 +201,6 @@ button[type="reset"] {
       font-size: 12px;
   }
 
-  button[type="reset"] {
-      display: none;
-  }
   .about {
       .about__feed-wrapper {
           flex-direction: column;

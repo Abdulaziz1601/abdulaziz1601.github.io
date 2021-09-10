@@ -24,7 +24,6 @@ label {
   border-radius: 12px;
   position: relative;
   background: $primary;
-  background: url('../imgs/close-form.svg') calc(100% - 18px) 50% no-repeat, $primary;
 }
 
 #comment {
@@ -170,9 +169,5 @@ button[type="reset"] {
       .input-global {
           font-size: 10px;
       }
-  }
-
-  button[type="reset"] {
-      display: none;
   }
 }

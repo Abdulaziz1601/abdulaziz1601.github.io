@@ -251,4 +251,7 @@ textarea {
 	margin-top: 110px;
 }
 
+button[type="reset"] {
+	cursor: pointer
+}
 @import "../blocks/pageinfo";
