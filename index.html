@@ -1,785 +1,476 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="./css/style.min.css">
-  <title>ST</title>
-</head>
-<body>
-  <h1 class="visually-hidden">ST</h1>
-  <header class="header">
-      <div class="header__top">
-        <div class="container">
-            <nav class="header__nav">
-              <button class="header__nav-menu"></button>
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Москва</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Гарантия</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Вопрос - Ответ</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Бонусная программа</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Оплата и доставка</a>
-                </li>
-                <li>
-                  <button class="header__nav-close">X</button>
-                </li>
-              </ul>
+<!doctype html>
+<html lang="en">
 
-              <a class="header__nav-logo" href="#">
-                <img class="header__nav-logoImg" src="imgs/top-logo.svg" width="134" height="32" alt="logo">
-              </a>
+	<head>
+		<meta charset="utf-8">
 
-              <div class="header__working-hours">
-                <p>Режим работы:  <span>Пн-Пт с 9:00 до 18:00</span></p>
-              </div>
+		<title>reveal.js – The HTML Presentation Framework</title>
 
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-              <div class="header__nav-right">
-                <a class="header__nav-info" href="#">
-                  <img src="imgs/person.png" width="24" height="24" alt="profil">
-                </a>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-                <div class="header__modal">
-                  <ul class="header__modal-list">
-                    <li class="header__modal-item">
-                      <a class="header__modal-link" href="#">Мой аккаунт</a>
-                    </li>
-                    <li class="header__modal-item">
-                      <a class="header__modal-link" href="#">Мои заказы</a>
-                    </li>
-                    <li class="header__modal-item">
-                      <a class="header__modal-link" href="#">История покупок</a>
-                    </li>
-                    <li class="header__modal-item">
-                      <a class="header__modal-link header__modal-link--exit" href="#">Выйти</a>
-                    </li>
-                    <li class="header__modal-close">
-                      <button class="header__modal-btn">
-                        <img class="header__modal-btn-img" src="imgs/close.svg" width="24" height="24" alt="close">
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <div class="header-advantages">
-                  <h3 class="header-advantages__title">
-                    Приемущества аккаунта
-                  </h3>
-                  <ul class="header-advantages__list">
-                    <li class="header-advantages__item">
-                      <img class="header-advantages__img" src="imgs/Clock.png" width="32" height="32" alt="img">
-                      <p class="header-advantages__text">Заказывать товары с быстрой доствакой</p>
-                    </li>
-                    <li class="header-advantages__item">
-                      <img class="header-advantages__img" src="imgs/Heart.png" width="32" height="32" alt="img">
-                      <p class="header-advantages__text">Участвовать в акциях и оплачивать покупки бонусами</p>
-                    </li>
-                    <li class="header-advantages__item">
-                      <img class="header-advantages__img" src="imgs/Download.png" width="32" height="32" alt="img">
-                      <p class="header-advantages__text">Пользоваться иллюстративным автокоталогом</p>
-                    </li>
-                  </ul>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
-                  <a href="#" class="header-advantages__link">
-                    Войти по номеру телефона
-                  </a>
-                </div>
-                <a class="header__nav-info" href="#">
-                  <img src="imgs/shopping-cart.png" width="24" height="24" alt="shopping">
-                </a>
-              </div>
-            </nav>
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
 
-          </div>
-        </div>
-      <div class="header__bottom">
-        <div class="container">
-          <div class="header__bottom-top">
-            <a href="#" class="header__bottom-logo">
-              <img src="./imgs/logo.svg" width="200" height="48" alt="logo">
-            </a>
+	<body>
 
-            <form class="header__bottom-form">
-              <select class="header__bottom-brand">
-                <option value="none" selected disabled hidden>Выберите марку</option>
-                <option value="Hino">Hino</option>
-                <option value="Kia">Kia</option>
-                <option value="Isuzu">Isuzu</option>
-                <option value="Volvo">Volvo</option>
-                <option value="VAZ">VAZ</option>
-                <option value="GAZ">GAZ</option>
-                <option value="Hino">Hino</option>
-                <option value="Mitsubisi">Mitsubisi</option>
-                <option value="Hino">Hino</option>
-              </select>
+		<div class="reveal">
 
-              <input class="header__bottom-search" type="search" placeholder="Искать ...">
-            </form>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<a href="https://revealjs.com">
+						<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+					</p>
+				</section>
 
-            <div class="header__bottom-right">
-              <a href="#" class="header__bottom-shopping-cart">
-                <span class="header__bottom-shoppingCart--active">500 rub</span>
-                <svg class="shopping-cart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.382 11H6.764L5.127 5H17.382L14.382 11ZM19.083 3.948C18.716 3.354 18.08 3 17.382 3H4.582L3.965 0.737C3.846 0.302 3.451 0 3 0H1C0.447 0 0 0.448 0 1C0 1.552 0.447 2 1 2H2.236L5.035 12.263C5.154 12.698 5.549 13 6 13H15C15.379 13 15.725 12.786 15.895 12.447L19.171 5.894C19.484 5.269 19.45 4.542 19.083 3.948ZM5.5002 15C4.6722 15 4.0002 15.671 4.0002 16.5C4.0002 17.329 4.6722 18 5.5002 18C6.3282 18 7.0002 17.329 7.0002 16.5C7.0002 15.671 6.3282 15 5.5002 15ZM14.0002 16.5C14.0002 15.671 14.6722 15 15.5002 15C16.3282 15 17.0002 15.671 17.0002 16.5C17.0002 17.329 16.3282 18 15.5002 18C14.6722 18 14.0002 17.329 14.0002 16.5Z" fill="#8D989D"/>
-                  </svg>
-              </a>
-              <a href="#" class="header__bottom-signin">
-                <svg class="person" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9 2.897 8.103 2 7 2C5.897 2 5 2.897 5 4C5 5.103 5.897 6 7 6C8.103 6 9 5.103 9 4ZM11 4C11 6.206 9.206 8 7 8C4.794 8 3 6.206 3 4C3 1.794 4.794 0 7 0C9.206 0 11 1.794 11 4ZM0 16C0 12.14 3.141 9 7 9C10.859 9 14 12.14 14 16C14 16.552 13.553 17 13 17C12.447 17 12 16.552 12 16C12 13.243 9.757 11 7 11C4.243 11 2 13.243 2 16C2 16.552 1.553 17 1 17C0.447 17 0 16.552 0 16Z" fill="#191919"/>
-                  </svg>
-                <span class="header__bottom-signin--sms">2</span>
-                Войти
-              </a>
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</p>
+				</section>
 
-              <div class="profile-modal">
-                <ul class="profile-modal__list">
-                  <li class="profile-modal__item">
-                    <a class="profile-modal__link" href="#">Мой аккаунт</a>
-                  </li>
-                  <li class="profile-modal__item">
-                    <a class="profile-modal__link" href="#">Мои заказы</a>
-                  </li>
-                  <li class="profile-modal__item">
-                    <a class="profile-modal__link" href="#">История покупок</a>
-                  </li>
-                  <li class="profile-modal__item">
-                    <a class="profile-modal__link profile-modal__link--exit" href="#">Выйти</a>
-                  </li>
-                  <li class="profile-modal__close">
-                    <button class="profile-modal__btn">
-                      <img class="profile-modal__btn-img" src="imgs/close.svg" width="24" height="24" alt="close">
-                    </button>
-                  </li>
-                </ul>
-              </div>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
 
-              <div class="advantages">
-                <h3 class="advantages__title">
-                  Приемущества аккаунта
-                </h3>
-                <ul class="advantages__list">
-                  <li class="advantages__item">
-                    <img class="advantages__img" src="imgs/Clock.png" width="32" height="32" alt="img">
-                    <p class="advantages__text">Заказывать товары с быстрой доствакой</p>
-                  </li>
-                  <li class="advantages__item">
-                    <img class="advantages__img" src="imgs/Heart.png" width="32" height="32" alt="img">
-                    <p class="advantages__text">Участвовать в акциях и оплачивать покупки бонусами</p>
-                  </li>
-                  <li class="advantages__item">
-                    <img class="advantages__img" src="imgs/Download.png" width="32" height="32" alt="img">
-                    <p class="advantages__text">Пользоваться иллюстративным автокоталогом</p>
-                  </li>
-                </ul>
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+					</p>
+				</section>
 
-                <a href="#" class="advantages__link">
-                  Войти по номеру телефона
-                </a>
-              </div>
-            </div>
+				<section data-visibility="hidden">
+					<h2>Hidden Slides</h2>
+					<p>
+						This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the `showHiddenSlides` config option to `true`.
+					</p>
+				</section>
 
-            <div class="signup">
-              <div class="signup__box">
-                <h2 class="signup__title">
-                  Регистрация аккаунта
-                </h2>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						import React, { useState } from 'react';
 
-                <button class="signup__close">
-                  <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24" alt="close">
-                </button>
+						function Example() {
+						  const [count, setCount] = useState(0);
 
-                <form class="signup__form">
-                  <span class="signup__form-text">Имя и фамилию</span>
-                  <input class="signup__input" type="text" placeholder="Дмитрий Суворов" required>
-                  <span class="signup__form-text">e-mail адрес</span>
-                  <input class="signup__input" type="email" placeholder="example@outlook.com" required>
-                  <button class="signup__button">Зарегестрироваться</button>
-                </form>
-              </div>
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
+				</section>
 
-              <div class="signup__box-enter">
-                <h2 class="signup__title">
-                  Вход на сайт
-                </h2>
+				<section data-auto-animate>
+					<h2 data-id="code-title">With animations</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						import React, { useState } from 'react';
 
-                <button class="signup__close">
-                  <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24" alt="close">
-                </button>
+						function Example() {
+						  const [count, setCount] = useState(0);
 
-                <form class="signup__form">
-                  <span class="signup__form-text">Телефон</span>
-                  <input class="signup__input" type="tel" placeholder="+7" required>
-                  <button class="signup__button-enter">Получить код</button>
-                </form>
-              </div>
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
 
-              <div class="signup__box-kod">
-                <h2 class="signup__title">
-                  Введите код
-                </h2>
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
 
-                <button class="signup__close">
-                  <img class="signup__close-img" src="imgs/signup-close.png" width="24" height="24" alt="close">
-                </button>
+						  return (
+						    <div>
+						      <p>You clicked {count} times</p>
+						      <button onClick={() => setCount(count + 1)}>
+						        Click me
+						      </button>
+						    </div>
+						  );
+						}
+					</script></code></pre>
+				</section>
 
-                <form class="signup__form">
-                  <span class="signup__form-text">Код</span>
-                  <span class="signup__form-error">Неверный код</span>
-                  <input class="signup__input" type="text" placeholder="A1B2C3" required>
-                  <button class="signup__button-kod">Войти</button>
-                </form>
-              </div>
-            </div>
-          </div>
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
+					</p>
+					<p>
+						(NOTE: Use ctrl + click in Linux.)
+					</p>
+				</section>
 
-          <ul class="header__bottom-list">
-            <li>
-              <a class="header__bottom-link header__bottom-link--left" href="#">
-                <img class="header__bottom-img" src="./imgs/menu-2.png" alt="menu">
-                <img class="header__bottom-menuClose" src="imgs/close.svg" width="24" height="24" alt="close">
-                <p class="header__bottom-left">Каталог запчастей</p>
-              </a>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Auto-Animate</h2>
+					<p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
 
-              <ul class="catalog">
-                <li class="catalog__item">
-                  <p class="catalog__text">
-                    Европейские <br> и Российские грузовики
-                  </p>
-                  <img src="imgs/arrow-ios-right.svg" alt="arrow right">
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
 
-                  <ul class="catalog__spareparts">
-                    <li class="catalog__spareparts-item">
-                      <p class="catalog__spareparts-text">
-                        Запчасти Isuzu
-                      </p>
-                      <img src="imgs/arrow-ios-right.svg" alt="arrow right">
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
 
-                      <ul class="catalog__inner">
-                        <li class="catalog__inner-item">
-                          <a class="catalog__inner-link" href="#">ISUZU NQR71</a>
-                        </li>
-                        <li class="catalog__inner-item">
-                          <a class="catalog__inner-link" href="#">ISUZU NQR75</a>
-                        </li>
-                        <li class="catalog__inner-item">
-                          <a class="catalog__inner-link" href="#">ISUZU N123PR75</a>
-                        </li>
-                        <li class="catalog__inner-item">
-                          <a class="catalog__inner-link" href="#">ISUZU NPR75</a>
-                        </li>
-                        <li class="catalog__inner-item">
-                          <a class="catalog__inner-link" href="#">ISUZU NPR75</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="catalog__spareparts-item">
-                      <p class="catalog__spareparts-text">
-                        Запчасти Hino
-                      </p>
-                      <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                    </li>
-                    <li class="catalog__spareparts-item">
-                      <p class="catalog__spareparts-text">
-                        Запчасти Foton
-                      </p>
-                      <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                    </li>
-                    <li class="catalog__spareparts-item">
-                      <p class="catalog__spareparts-text">
-                        Запчасти Jac
-                      </p>
-                      <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                    </li>
-                  </ul>
-                </li>
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [docs](https://revealjs.com/markdown/).
 
-                <li class="catalog__item">
-                  <p class="catalog__text">
-                    Японские <br> и Корейские грузовики
-                  </p>
-                  <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                </li>
+						```html []
+						<section data-markdown>
+						  ## Markdown support
 
-                <li class="catalog__item">
-                  <p class="catalog__text">
-                    Китайские грузовики
-                  </p>
-                  <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                </li>
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+						</section>
+						```
+					</script>
+				</section>
 
-                <li class="catalog__item">
-                  <p class="catalog__text">
-                    Спецтехника
-                  </p>
-                  <img src="imgs/arrow-ios-right.svg" alt="arrow right">
-                </li>
-              </ul>
-            </li>
-            <li class="header__bottom-item">
-              <a href="#" class="header__bottom-link">Автокаталог</a>
-            </li>
-            <li class="header__bottom-item">
-              <a href="#" class="header__bottom-link">О компании</a>
-            </li>
-            <li class="header__bottom-item">
-              <a href="#" class="header__bottom-link">Сотрудничество</a>
-            </li>
-            <li class="header__bottom-item">
-              <a href="#" class="header__bottom-link">Контакты</a>
-            </li>
-            <li class="header__bottom-contact">
-              <button class="header__bottom-contacts">
-                  <span class="header__bottom-number">
-                    8 800 444 55 66 <br>
-                    <span class="header__bottom-text">Беслпатный звонок по РФ</span>
-                  </span>
-                <img class="header__bottom-down" src="./imgs/arrow-ios-down.png" width="12" height="12" alt="arrow ios down">
-                <img class="header__bottom-close" src="imgs/close.svg" width="12" height="12" alt="arrow ios down">
-              </button>
+				<section>
+					<p>Add the <code>r-fit-text</code> class to auto-size text</p>
+					<h2 class="r-fit-text">FIT TEXT</h2>
+				</section>
 
-              <div class="contacts">
-                <div class="contacts__box">
-                  <h5 class="contacts__head">
-                    Обратная связь
-                  </h5>
-                  <button class="contacts__close">
-                    <img src="imgs/close.svg" width="16" height="16" alt="close">
-                  </button>
-                </div>
-                <p class="contacts__text">
-                  Бесплатный звонок по РФ
-                </p>
-                <a href="tel:+88007757072" class="contacts__tel contacts__tel--head">8 800 775 70 72</a>
-                <p class="contacts__text">
-                  Другие номера
-                </p>
-                <a href="tel:+7(922)342-15-51" class="contacts__tel">+7 (922) 342-15-51</a>
-                <a href="tel:+7(912)352-30-40" class="contacts__tel">+7 (912) 352-30-40</a>
-                <p class="contacts__text">Пн-Пт с 9:00 до 18:00</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </header>
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
 
-  <main>
-    <section>
-      <div class="container">
-        <div class="hero">
-          <div class="hero__box">
-            <h2 class="hero__title">
-              Продажа автозапчастей для грузовиков и спецтехники, с доставкой и по доступным ценам.
-            </h2>
-            <p class="hero__text">
-              Регистрируйтесь, получайте крутые бонусы и доступ к иллюстрированному каталогу, а также многие другие привилегии.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
 
-    <section class="services">
-      <div class="container">
-        <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <img class="services__img" src="./imgs/services-1.png" alt="services">
-            <p class="services__text">Бесплатная доставка до терминала ТК</p>
-          </li>
-          <li class="services__item">
-            <img class="services__img" src="./imgs/services-2.png" alt="services">
-            <p class="services__text">Удобный и быстрый подбор запчастей</p>
-          </li>
-          <li class="services__item">
-            <img class="services__img" src="./imgs/services-3.png" alt="services">
-            <p class="services__text">Бесплатный возврат всех товаров</p>
-          </li>
-          <li class="services__item">
-            <img class="services__img" src="./imgs/services-4.png" alt="services">
-            <p class="services__text">Мы уже более 9 лет служим вам </p>
-          </li>
-          <li class="services__item">
-            <img class="services__img" src="./imgs/services-5.png" alt="services">
-            <p class="services__text">Клиентская служба через call-center</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
 
-    <section class="spareparts">
-      <div class="container">
-        <h2 class="spareparts__title">Запчасти для грузовых авто</h2>
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
 
-        <ul class="spareparts__top-list">
-          <li class="spareparts__top-item spareparts__top-item--active">
-            <h3 class="spareparts__top-title spareparts__top-title--active">Грузовые автомобили и автобусы</h3>
-            <p class="spareparts__top-text">Все модели запчастей для грузовых автомобилей и автобусов</p>
-            <img class="spareparts__top-img" src="./imgs/cars-top.svg" height="74" alt="Запчасти на грузовые автомобили и автобусы">
-            <button class="spareparts__top-button spareparts__top-button--active"></button>
-          </li>
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
 
-          <li class="spareparts__top-item">
-            <h3 class="spareparts__top-title">Китайские грузовики</h3>
-            <p class="spareparts__top-text">Запчасти для Китайских грузовых автомобилей</p>
-            <img class="spareparts__top-img" height="74" src="./imgs/card-china.svg" alt="card china">
-            <button class="spareparts__top-button"></button>
-          </li>
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
 
-          <li class="spareparts__top-item">
-            <h3 class="spareparts__top-title">Спец техника</h3>
-            <p class="spareparts__top-text">Запчасти для спец техники автомобилей</p>
-            <img class="spareparts__top-img" height="74" src="./imgs/card-tex.svg" alt="card china">
-            <button class="spareparts__top-button"></button>
-          </li>
-        </ul>
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
 
-        <div class="spareparts__bottom">
-          <ul class="spareparts__list">
-            <li class="spareparts__item">
-              <h4 class="spareparts__head">Hino</h4>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hino 300</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hyundai HD270</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NPR 71</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Fuso Canter</a>
-            </li>
-          </ul>
+				<section data-background-iframe="https://hakim.se" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Iframe Backgrounds</h2>
+						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
+					</div>
+				</section>
 
-          <ul class="spareparts__list">
-            <li class="spareparts__item spareparts__item--top">
-              <a class="spareparts__item-link" href="#">Kia K2500/K2700</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hino 700</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NQR 90</a>
-            </li>
-          </ul>
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
 
-          <ul class="spareparts__list">
-            <li class="spareparts__item">
-              <h4 class="spareparts__head">Kia</h4>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hyundai HD270</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NPR 71</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Fuso Canter</a>
-            </li>
-          </ul>
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
 
-          <ul class="spareparts__list">
-            <li class="spareparts__item spareparts__item--top">
-              <a class="spareparts__item-link" href="#">Hino 700</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NQR 90</a>
-            </li>
-          </ul>
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
 
-          <ul class="spareparts__list">
-            <li class="spareparts__item">
-              <h4 class="spareparts__head">Kia</h4>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hyundai HD270</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NPR 71</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Fuso Canter</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hino 700</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NQR 90</a>
-            </li>
-          </ul>
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
 
-          <ul class="spareparts__list">
-            <li class="spareparts__item">
-              <h4 class="spareparts__head">Hino</h4>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hino 300</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Hyundai HD270</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Isuzu NPR 71</a>
-            </li>
-            <li class="spareparts__item">
-              <a class="spareparts__item-link" href="#">Fuso Canter</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
 
-    <section class="stock">
-      <div class="container">
-        <div class="stock__top">
-          <h2 class="stock__title">Акции</h2>
-          <a href="#" class="stock__view-stock">Смотреть все акции</a>
-        </div>
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://revealjs.com/speaker-view/">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
 
-        <ul class="stock__list">
-          <li class="stock__item">
-            <img class="stock__img" src="./imgs/stock.png" alt="stock">
-          </li>
-          <li class="stock__item stock__item--active">
-            <img class="stock__img" src="./imgs/stock.png" alt="stock">
-          </li>
-          <li class="stock__item">
-            <img class="stock__img" src="./imgs/stock.png" alt="stock">
-          </li>
-          <li class="stock__item">
-            <button class="stock__button stock__button--left"></button>
-            <button class="stock__button stock__button--right"></button>
-          </li>
-        </ul>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
 
-        <a href="#" class="stock__view-stock stock__view-stock--active">Смотреть все акции</a>
-      </div>
-    </section>
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
 
-    <section class="news">
-      <div class="container">
-        <div class="news__top">
-          <h2 class="news__title">Новости</h2>
-          <a href="#" class="news__view-new">Смотреть все акции</a>
-        </div>
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
 
-        <ul class="news__list">
-          <li class="news__item">
-            <div class="news__item-left">
-              <p><span>30</span>апреля</p>
-            </div>
-            <div class="news__item-right">
-              <h4 class="news__item-title">Режим работы на майские праздники</h4>
-              <p class="news__item__text">Режим работы на майские праздники режим работы на майские</p>
-            </div>
-          </li>
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.on( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
 
-          <li class="news__item">
-            <div class="news__item-left">
-              <p><span>30</span>апреля</p>
-            </div>
-            <div class="news__item-right">
-              <h4 class="news__item-title">Режим работы на майские праздники</h4>
-              <p class="news__item__text">Режим работы на майские праздники режим работы на майские</p>
-            </div>
-          </li>
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
 
-          <li class="news__item">
-            <div class="news__item-left">
-              <p><span>30</span>апреля</p>
-            </div>
-            <div class="news__item-right">
-              <h4 class="news__item-title">Режим работы на майские праздники</h4>
-              <p class="news__item__text">Режим работы на майские праздники режим работы на майские</p>
-            </div>
-          </li>
-        </ul>
-        <a href="#" class="news__view-new news__view-new--active">Смотреть все акции</a>
-      </div>
-    </section>
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
+						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
+						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
 
-    <section class="online-store">
-      <div class="container">
-        <h2 class="online-store__title">Запчасти для грузовиков в интернет-магазине ST-SPARES.RU</h2>
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
 
-        <ul class="online-store__list">
-          <li class="online-store__item">
-            <p>
-              ST-Spares – успешно функционирующая компания, которая специализируется на оптовых продажах запчастей для грузовых автомобилей. Мы сотрудничаем напрямую с известными во всем мире заводами-изготовителями и поставщиками. Купить грузовые запчасти у нас можно по реальной цене от производителя без посредников и дополнительных наценок.
-            </p>
-          </li>
+			</div>
 
-          <li class="online-store__item online-store__item--none">
-            <p>
-              Покупка вам обойдется дешевле, чем приобретение тех же деталей у официальных дилеров, которые сегодня склонны завышать цены на товары, пользующиеся наибольшим спросом. В наличии есть все позиции, необходимые для обеспечения полноценной работы автомобилей.
-            </p>
-          </li>
+		</div>
 
-          <li class="online-store__item online-store__item--none">
-            <p>
-              Мы несем полную ответственность за качество предлагаемой продукции и всегда готовы помочь автовладельцам приобрести запчасти японских, китайских, европейских и российских грузовиков для проведения ремонта любой сложности.
-            </p>
-          </li>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
 
-          <li class="online-store__item online-store__item--none">
-            Работаем с такими брендам, как:
-            <ul class="online-store__inner">
-              <li>• TATA 613</li>
-              <li>• Mitsubishi FUSO Canter</li>
-              <li>•	HINO 300 / 500 /700</li>
-              <li>•	HINO 300 / 500 /700</li>
-              <li>•	ISUZU NQR71-75-90 / NPR71-75 / NLR85 / NMR85 / FSR90</li>
-              <li>•	FOTON 1039 / 1049/1069/1089/1093/1099</li>
-              <li>•	JAC N56 / N75 / N120</li>
-              <li>•	BAW  Fenix 1044 / 1065</li>
-              <li>•	Газон NEXT</li>
-              <li>•	ПАЗ Вектор NEXT</li>
-            </ul>
-          </li>
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
 
-          <li class="online-store__item online-store__item--none">
-            Заказ ожете оформить любым удобным для вас способом:
-            <ol class="online-store__inner">
-              <li>1. Можете воспользоваться поиском на сайте интернета магазина или каталогом и самостоятельно оформить заказ, после чего с вами свяжется менеджер.</li>
-              <li>2. Можете оформить заказ по телефону +7 (495) 989-43-31; +7 (800) 775-70-72 - бесплатный звонок по России; +7 (985) 310-95-50 или отправить запрос на почту info@st-spares.ru.
-                Наши менеджеры помогут вам квалифицировано подобрать необходимые вам запчасти, и предоставят дополнительную информацию по спецификации продукции.</li>
-            </ol>
-          </li>
-          <li>
-            <button class="online-store__allView">показать все</button>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__top">
-        <h2 class="site-footer__title">Полезная рассылка</h2>
-        <p class="site-footer__text">Подпишитесь на рассылку и получайте свежие
-          материалы и новости с нашего сайта быстрее всех</p>
+		</script>
 
-        <form class="site-footer__form">
-          <input class="site-footer__email" type="email" placeholder="Ваш email">
-          <button class="site-footer__button">Хочу получать рассылку</button>
-        </form>
-        <p class="site-footer__top-text">При подписке вы принимаете условия пользовательского соглашения</p>
-      </div>
-
-      <div class="site-footer__bottom">
-        <ul class="site-footer__list site-footer__list--none">
-          <li class="site-footer__item">
-            <h4 class="site-footer__head">Помощь покупателю</h4>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Оплата и доставка</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Гарантия</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Рассылка новостей</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Запрос по VIN</a>
-          </li>
-        </ul>
-
-        <ul class="site-footer__list site-footer__list--active site-footer__list--none">
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Вопрос - ответ</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Руководство по ремонту</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Личный кабинет</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">История заказов</a>
-          </li>
-        </ul>
-
-        <ul class="site-footer__list site-footer__list--none">
-          <li class="site-footer__item">
-            <h4 class="site-footer__head">Компания</h4>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">О компании</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Доставка</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Рассылка новостей</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Контакты</a>
-          </li>
-        </ul>
-
-        <ul class="site-footer__list site-footer__list--none">
-          <li class="site-footer__item">
-            <h4 class="site-footer__head">Информация</h4>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Новости</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Акции</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Товары со скидками</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Бренды</a>
-          </li>
-          <li class="site-footer__item">
-            <a href="#" class="site-footer__link">Карта сайта</a>
-          </li>
-        </ul>
-
-        <ul class="site-footer__list">
-          <li class="site-footer__item">
-            <h4 class="site-footer__head">Обратная связь</h4>
-          </li>
-          <li class="site-footer__item site-footer__item--number">
-            <div class="site-footer__item-info"><a class="site-footer__item-tel" href="tel:+7(985)310-95-50">+7 (985) 310-95-50</a><span>Пн-Пт с 9:00 до 18:00</span></div>
-          </li>
-          <li class="site-footer__item">
-            <p>Москва, 32 км МКАД, владение 15, Торговый Комплекс Сфера-Авто (второй этаж, офис 305).</p>
-          </li>
-          <li class="site-footer__item">
-            <div class="site-footer__icons">
-              <a href="#" class="site-footer__icon">
-                <img src="./imgs/vk-social-network-logo1.svg" alt="icon">
-              </a>
-              <a href="#" class="site-footer__icon">
-                <img src="./imgs/instagram.svg" alt="icon">
-              </a>
-              <a href="#" class="site-footer__icon">
-                <img src="./imgs/facebook-logo.svg" alt="icon">
-              </a>
-              <a href="#" class="site-footer__icon">
-                <img src="./imgs/odnoklassniki-logo.svg" alt="icon">
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+	</body>
 </html>
